@@ -1,3 +1,6 @@
 <p>
   favorite works!
 </p>
+<div *ngIf="isSelected; else elseBlock">Is selected is true</div>
+<ng-template #elseBlock>Is Selected is false</ng-template>
+<button (click)="toggleSelected()" class="btn btn-primary">Change selected</button>
