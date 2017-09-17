@@ -5,6 +5,29 @@
 
 <ul>
   <li (click)="itemSelected(i)"  *ngFor="let call of calls; let i = index;">{{ call }} Index {{ i }} </li>
+ 
   
 </ul>
 
+ <button class="btn btn-primary">Submit</button>
+<div>
+    <label>Unfiltered key up</label>
+    <input (keyup)="onKeyUp($event)">
+</div>
+
+
+<div>
+    <label>Bind to component via manual event</label>
+    <input #email (keyup.enter)="onKeyUpFiltered(email.value)">
+<div>
+
+
+<div>
+    <label>One way bind</label>
+    <input [value]="defaultOneWayBinding" >
+<div>
+
+  <div>
+    <label>Two way bind with  ngModel</label>
+    <input [(ngModel)]="modelBoundValue" (keyup.enter)="onKeuUpWithModelBinding()">
+<div>
