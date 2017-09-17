@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CallsComponent } from './calls/calls.component';
+import { SummaryPipe } from "./summary.pipe";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CallsComponent
+    CallsComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule, 

@@ -31,3 +31,8 @@
     <label>Two way bind with  ngModel</label>
     <input [(ngModel)]="modelBoundValue" (keyup.enter)="onKeuUpWithModelBinding()">
 <div>
+
+    <div>
+    <label>Custom pipe example to summarise text</label>
+    {{ longPieceOfText | summary }}
+<div>

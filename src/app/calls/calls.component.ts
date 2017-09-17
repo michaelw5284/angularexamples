@@ -13,6 +13,9 @@ export class CallsComponent implements OnInit {
   calls : string[];
   defaultOneWayBinding : string = "me@home.com";
   modelBoundValue : string  = "Test";
+  longPieceOfText : string = `this is a really long piece of text to show how custom pipes work.  This is wkjbfweh ewfhefh
+  wkefnwef ewf wef hweifj fewiof ;wefhw; fhwq;fjwq;fhwf;q wnfrhef;wj fqwfbqwifuhwqfnwfjbqw;ifh awifhof
+  `
  
   ngOnInit() {
   
