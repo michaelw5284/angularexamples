@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CallsComponent } from './calls/calls.component';
 import { SummaryPipe } from "./summary.pipe";
 import { FavoriteComponent } from './favorite/favorite.component';
+import { App } from './app.journals/app.journals.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     AppComponent,
     CallsComponent,
     SummaryPipe,
-    FavoriteComponent
+    FavoriteComponent,
+    App.JournalsComponent
   ],
   imports: [
     BrowserModule, 
